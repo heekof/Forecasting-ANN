@@ -159,12 +159,12 @@ class Layer:
 if __name__ == '__main__':
 
     # a logical function
-    logic_ann = ANN([2, 2, 1])
+    logic_ann = ANN([2,2, 1])
     inputs = [[0.0, 0.0], [0.0, 1.0], [1.0, 0.0], [1.0, 1.0]]
     targets = [[0.0], [1.0], [1.0], [0.0]]
 
     # train and predict
-    logic_ann.train(inputs, targets, 20000)
+    logic_ann.train(inputs, targets, 1000)
     print("Predictions after training")
     for i in range(len(targets)):
         print(inputs[i], logic_ann.predict(inputs[i]))
