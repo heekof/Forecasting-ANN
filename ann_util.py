@@ -20,6 +20,18 @@ def deriv_hyperbolic_tangent(x):
     th = math.tanh(x)
     return 1 - th * th
 
+def linear(x):
+    return x
+
+def deriv_linear(x):
+    return 1
+
+def relu(x):
+    pass
+
+def deriv_relu(x):
+    pass
+
 
 def between(min, max):
     """

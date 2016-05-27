@@ -2,6 +2,7 @@ import math
 from ann_util import between, make_matrix
 from ann_util import deriv_logistic, logistic
 from ann_util import deriv_hyperbolic_tangent, hyperbolic_tangent
+from ann_util import deriv_linear, linear
 
 use_bias = 1
 
@@ -24,6 +25,12 @@ class ANN:
         elif activation_fun == 'logistic':
             self.squash = logistic
             self.deriv_squash = deriv_logistic
+        elif activation_fun == 'linear':
+            self.squash = linear
+            self.deriv_squash = deriv_linear
+        elif activation_fun == 'ReLu':
+            self.squash = relu
+            self.deriv_squash = deriv_relu
 
         for l in range(len(layer_sizes)):
             layer_size = layer_sizes[l]
