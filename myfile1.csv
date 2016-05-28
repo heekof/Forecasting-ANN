@@ -1,0 +1,418 @@
+,help,metrics,name,type
+0,"TcpExt IPReversePathFilter from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_IPReversePathFilter,GAUGE
+0,"TcpExt TCPSackShiftFallback from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPSackShiftFallback,GAUGE
+0,Filesystem free space in bytes.,"{u'labels': {u'device': u'/dev/disk/by-uuid/64ecdf77-db7b-48a8-9066-abfb837f2e24', u'mountpoint': u'/', u'fstype': u'ext4'}, u'value': u'3.9943901184e+10'}",node_filesystem_free,GAUGE
+1,Filesystem free space in bytes.,"{u'labels': {u'device': u'none', u'mountpoint': u'/run/lock', u'fstype': u'tmpfs'}, u'value': u'5.24288e+06'}",node_filesystem_free,GAUGE
+2,Filesystem free space in bytes.,"{u'labels': {u'device': u'none', u'mountpoint': u'/run/shm', u'fstype': u'tmpfs'}, u'value': u'1.037008896e+09'}",node_filesystem_free,GAUGE
+3,Filesystem free space in bytes.,"{u'labels': {u'device': u'none', u'mountpoint': u'/run/user', u'fstype': u'tmpfs'}, u'value': u'1.048576e+08'}",node_filesystem_free,GAUGE
+4,Filesystem free space in bytes.,"{u'labels': {u'device': u'none', u'mountpoint': u'/vagrant', u'fstype': u'vboxsf'}, u'value': u'4.241481728e+10'}",node_filesystem_free,GAUGE
+5,Filesystem free space in bytes.,"{u'labels': {u'device': u'rootfs', u'mountpoint': u'/', u'fstype': u'rootfs'}, u'value': u'3.9943901184e+10'}",node_filesystem_free,GAUGE
+6,Filesystem free space in bytes.,"{u'labels': {u'device': u'rpc_pipefs', u'mountpoint': u'/run/rpc_pipefs', u'fstype': u'rpc_pipefs'}, u'value': u'0'}",node_filesystem_free,GAUGE
+7,Filesystem free space in bytes.,"{u'labels': {u'device': u'tmpfs', u'mountpoint': u'/run', u'fstype': u'tmpfs'}, u'value': u'2.07015936e+08'}",node_filesystem_free,GAUGE
+0,The total number of sectors read successfully.,"{u'labels': {u'device': u'sda'}, u'value': u'466238'}",node_disk_sectors_read,COUNTER
+1,The total number of sectors read successfully.,"{u'labels': {u'device': u'sr0'}, u'value': u'0'}",node_disk_sectors_read,COUNTER
+0,"Icmp InEchoReps from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Icmp_InEchoReps,GAUGE
+0,Number of goroutines that currently exist.,{u'value': u'11'},go_goroutines,GAUGE
+0,"TcpExt TCPSackShifted from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPSackShifted,GAUGE
+0,"Icmp OutAddrMaskReps from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Icmp_OutAddrMaskReps,GAUGE
+0,packets receive from /proc/net/dev.,"{u'labels': {u'device': u'eth0'}, u'value': u'17565'}",node_network_receive_packets,GAUGE
+1,packets receive from /proc/net/dev.,"{u'labels': {u'device': u'eth1'}, u'value': u'0'}",node_network_receive_packets,GAUGE
+2,packets receive from /proc/net/dev.,"{u'labels': {u'device': u'eth2'}, u'value': u'0'}",node_network_receive_packets,GAUGE
+3,packets receive from /proc/net/dev.,"{u'labels': {u'device': u'eth3'}, u'value': u'0'}",node_network_receive_packets,GAUGE
+4,packets receive from /proc/net/dev.,"{u'labels': {u'device': u'lo'}, u'value': u'0'}",node_network_receive_packets,GAUGE
+0,"Tcp InSegs from /proc/net/{netstat,snmp}.",{u'value': u'17294'},node_netstat_Tcp_InSegs,GAUGE
+0,Dirty from /proc/meminfo.,{u'value': u'0'},node_memory_Dirty,GAUGE
+0,"TcpExt TCPForwardRetrans from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPForwardRetrans,GAUGE
+0,Seconds the cpus spent in each mode.,"{u'labels': {u'mode': u'guest', u'cpu': u'cpu0'}, u'value': u'0'}",node_cpu,COUNTER
+1,Seconds the cpus spent in each mode.,"{u'labels': {u'mode': u'idle', u'cpu': u'cpu0'}, u'value': u'8747.87'}",node_cpu,COUNTER
+2,Seconds the cpus spent in each mode.,"{u'labels': {u'mode': u'iowait', u'cpu': u'cpu0'}, u'value': u'8.14'}",node_cpu,COUNTER
+3,Seconds the cpus spent in each mode.,"{u'labels': {u'mode': u'irq', u'cpu': u'cpu0'}, u'value': u'3.8'}",node_cpu,COUNTER
+4,Seconds the cpus spent in each mode.,"{u'labels': {u'mode': u'nice', u'cpu': u'cpu0'}, u'value': u'0'}",node_cpu,COUNTER
+5,Seconds the cpus spent in each mode.,"{u'labels': {u'mode': u'softirq', u'cpu': u'cpu0'}, u'value': u'0'}",node_cpu,COUNTER
+6,Seconds the cpus spent in each mode.,"{u'labels': {u'mode': u'steal', u'cpu': u'cpu0'}, u'value': u'0'}",node_cpu,COUNTER
+7,Seconds the cpus spent in each mode.,"{u'labels': {u'mode': u'system', u'cpu': u'cpu0'}, u'value': u'19.63'}",node_cpu,COUNTER
+8,Seconds the cpus spent in each mode.,"{u'labels': {u'mode': u'user', u'cpu': u'cpu0'}, u'value': u'17.45'}",node_cpu,COUNTER
+9,Seconds the cpus spent in each mode.,"{u'labels': {u'mode': u'guest', u'cpu': u'cpu1'}, u'value': u'0'}",node_cpu,COUNTER
+10,Seconds the cpus spent in each mode.,"{u'labels': {u'mode': u'idle', u'cpu': u'cpu1'}, u'value': u'8769.3'}",node_cpu,COUNTER
+11,Seconds the cpus spent in each mode.,"{u'labels': {u'mode': u'iowait', u'cpu': u'cpu1'}, u'value': u'1.45'}",node_cpu,COUNTER
+12,Seconds the cpus spent in each mode.,"{u'labels': {u'mode': u'irq', u'cpu': u'cpu1'}, u'value': u'1.22'}",node_cpu,COUNTER
+13,Seconds the cpus spent in each mode.,"{u'labels': {u'mode': u'nice', u'cpu': u'cpu1'}, u'value': u'0'}",node_cpu,COUNTER
+14,Seconds the cpus spent in each mode.,"{u'labels': {u'mode': u'softirq', u'cpu': u'cpu1'}, u'value': u'0'}",node_cpu,COUNTER
+15,Seconds the cpus spent in each mode.,"{u'labels': {u'mode': u'steal', u'cpu': u'cpu1'}, u'value': u'0'}",node_cpu,COUNTER
+16,Seconds the cpus spent in each mode.,"{u'labels': {u'mode': u'system', u'cpu': u'cpu1'}, u'value': u'15.67'}",node_cpu,COUNTER
+17,Seconds the cpus spent in each mode.,"{u'labels': {u'mode': u'user', u'cpu': u'cpu1'}, u'value': u'8'}",node_cpu,COUNTER
+0,The number of I/Os currently in progress.,"{u'labels': {u'device': u'sda'}, u'value': u'0'}",node_disk_io_now,GAUGE
+1,The number of I/Os currently in progress.,"{u'labels': {u'device': u'sr0'}, u'value': u'0'}",node_disk_io_now,GAUGE
+0,"Icmp OutParmProbs from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Icmp_OutParmProbs,GAUGE
+0,"Ip InHdrErrors from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Ip_InHdrErrors,GAUGE
+0,"Icmp InEchos from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Icmp_InEchos,GAUGE
+0,"TcpExt TCPDSACKOfoRecv from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPDSACKOfoRecv,GAUGE
+0,"Tcp InCsumErrors from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Tcp_InCsumErrors,GAUGE
+0,NFS_Unstable from /proc/meminfo.,{u'value': u'0'},node_memory_NFS_Unstable,GAUGE
+0,"Icmp OutTimestampReps from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Icmp_OutTimestampReps,GAUGE
+0,"Udp OutDatagrams from /proc/net/{netstat,snmp}.",{u'value': u'20'},node_netstat_Udp_OutDatagrams,GAUGE
+0,SwapCached from /proc/meminfo.,{u'value': u'0'},node_memory_SwapCached,GAUGE
+0,"TcpExt DelayedACKLost from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_DelayedACKLost,GAUGE
+0,"Ip FragOKs from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Ip_FragOKs,GAUGE
+0,"Udp NoPorts from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Udp_NoPorts,GAUGE
+0,"Icmp OutTimestamps from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Icmp_OutTimestamps,GAUGE
+0,WritebackTmp from /proc/meminfo.,{u'value': u'0'},node_memory_WritebackTmp,GAUGE
+0,"TcpExt ListenOverflows from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_ListenOverflows,GAUGE
+0,Shmem from /proc/meminfo.,{u'value': u'393216'},node_memory_Shmem,GAUGE
+0,"TcpExt TCPMinTTLDrop from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPMinTTLDrop,GAUGE
+0,"Icmp InErrors from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Icmp_InErrors,GAUGE
+0,The total number of sectors written successfully.,"{u'labels': {u'device': u'sda'}, u'value': u'5032'}",node_disk_sectors_written,COUNTER
+1,The total number of sectors written successfully.,"{u'labels': {u'device': u'sr0'}, u'value': u'0'}",node_disk_sectors_written,COUNTER
+0,"TcpExt TCPRenoFailures from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPRenoFailures,GAUGE
+0,"TcpExt PruneCalled from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_PruneCalled,GAUGE
+0,Filesystem size in bytes.,"{u'labels': {u'device': u'/dev/disk/by-uuid/64ecdf77-db7b-48a8-9066-abfb837f2e24', u'mountpoint': u'/', u'fstype': u'ext4'}, u'value': u'4.1612050432e+10'}",node_filesystem_size,GAUGE
+1,Filesystem size in bytes.,"{u'labels': {u'device': u'none', u'mountpoint': u'/run/lock', u'fstype': u'tmpfs'}, u'value': u'5.24288e+06'}",node_filesystem_size,GAUGE
+2,Filesystem size in bytes.,"{u'labels': {u'device': u'none', u'mountpoint': u'/run/shm', u'fstype': u'tmpfs'}, u'value': u'1.037008896e+09'}",node_filesystem_size,GAUGE
+3,Filesystem size in bytes.,"{u'labels': {u'device': u'none', u'mountpoint': u'/run/user', u'fstype': u'tmpfs'}, u'value': u'1.048576e+08'}",node_filesystem_size,GAUGE
+4,Filesystem size in bytes.,"{u'labels': {u'device': u'none', u'mountpoint': u'/vagrant', u'fstype': u'vboxsf'}, u'value': u'6.4793505792e+10'}",node_filesystem_size,GAUGE
+5,Filesystem size in bytes.,"{u'labels': {u'device': u'rootfs', u'mountpoint': u'/', u'fstype': u'rootfs'}, u'value': u'4.1612050432e+10'}",node_filesystem_size,GAUGE
+6,Filesystem size in bytes.,"{u'labels': {u'device': u'rpc_pipefs', u'mountpoint': u'/run/rpc_pipefs', u'fstype': u'rpc_pipefs'}, u'value': u'0'}",node_filesystem_size,GAUGE
+7,Filesystem size in bytes.,"{u'labels': {u'device': u'tmpfs', u'mountpoint': u'/run', u'fstype': u'tmpfs'}, u'value': u'2.07405056e+08'}",node_filesystem_size,GAUGE
+0,"IpExt InNoRoutes from /proc/net/{netstat,snmp}.",{u'value': u'7'},node_netstat_IpExt_InNoRoutes,GAUGE
+0,Total user and system CPU time spent in seconds.,{u'value': u'33.66'},process_cpu_seconds_total,COUNTER
+0,Total number of HTTP requests made.,"{u'labels': {u'code': u'200', u'handler': u'prometheus', u'method': u'get'}, u'value': u'1885'}",http_requests_total,COUNTER
+0,"UdpLite InErrors from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_UdpLite_InErrors,GAUGE
+0,"TcpExt TCPRetransFail from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPRetransFail,GAUGE
+0,"TcpExt TCPHPAcks from /proc/net/{netstat,snmp}.",{u'value': u'6286'},node_netstat_TcpExt_TCPHPAcks,GAUGE
+0,"TcpExt TCPAbortOnData from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPAbortOnData,GAUGE
+0,SUnreclaim from /proc/meminfo.,{u'value': u'9.027584e+06'},node_memory_SUnreclaim,GAUGE
+0,"TcpExt TCPHPHits from /proc/net/{netstat,snmp}.",{u'value': u'109'},node_netstat_TcpExt_TCPHPHits,GAUGE
+0,"TcpExt TCPMD5Unexpected from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPMD5Unexpected,GAUGE
+0,"Tcp RtoAlgorithm from /proc/net/{netstat,snmp}.",{u'value': u'1'},node_netstat_Tcp_RtoAlgorithm,GAUGE
+0,Inactive_anon from /proc/meminfo.,{u'value': u'290816'},node_memory_Inactive_anon,GAUGE
+0,"TcpExt TCPRenoRecovery from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPRenoRecovery,GAUGE
+0,System time in seconds since epoch (1970).,{u'value': u'1.459107217e+09'},node_time,COUNTER
+0,node_exporter: Duration of a scrape job.,"{u'count': u'1902', u'sum': u'1.089802553999999', u'quantiles': {u'0.9': u'0.000759318', u'0.5': u'0.000329869', u'0.99': u'0.001158477'}, u'labels': {u'collector': u'diskstats', u'result': u'success'}}",node_exporter_scrape_duration_seconds,SUMMARY
+1,node_exporter: Duration of a scrape job.,"{u'count': u'1902', u'sum': u'2.391700742000004', u'quantiles': {u'0.9': u'0.002314258', u'0.5': u'0.000511012', u'0.99': u'0.0054709680000000005'}, u'labels': {u'collector': u'filesystem', u'result': u'success'}}",node_exporter_scrape_duration_seconds,SUMMARY
+2,node_exporter: Duration of a scrape job.,"{u'count': u'1902', u'sum': u'0.21571398000000047', u'quantiles': {u'0.9': u'0.00015127400000000002', u'0.5': u'7.6236e-05', u'0.99': u'0.000216495'}, u'labels': {u'collector': u'loadavg', u'result': u'success'}}",node_exporter_scrape_duration_seconds,SUMMARY
+3,node_exporter: Duration of a scrape job.,"{u'count': u'1902', u'sum': u'0.7156400990000007', u'quantiles': {u'0.9': u'0.000483405', u'0.5': u'0.000234767', u'0.99': u'0.000931335'}, u'labels': {u'collector': u'meminfo', u'result': u'success'}}",node_exporter_scrape_duration_seconds,SUMMARY
+4,node_exporter: Duration of a scrape job.,"{u'count': u'1902', u'sum': u'0.9266189549999991', u'quantiles': {u'0.9': u'0.000650478', u'0.5': u'0.000286684', u'0.99': u'0.001104664'}, u'labels': {u'collector': u'netdev', u'result': u'success'}}",node_exporter_scrape_duration_seconds,SUMMARY
+5,node_exporter: Duration of a scrape job.,"{u'count': u'1902', u'sum': u'1.0407024299999996', u'quantiles': {u'0.9': u'0.0006788580000000001', u'0.5': u'0.000324131', u'0.99': u'0.001046737'}, u'labels': {u'collector': u'netstat', u'result': u'success'}}",node_exporter_scrape_duration_seconds,SUMMARY
+6,node_exporter: Duration of a scrape job.,"{u'count': u'1902', u'sum': u'0.5061305210000001', u'quantiles': {u'0.9': u'0.000319365', u'0.5': u'0.00015035300000000002', u'0.99': u'0.00046968300000000004'}, u'labels': {u'collector': u'stat', u'result': u'success'}}",node_exporter_scrape_duration_seconds,SUMMARY
+7,node_exporter: Duration of a scrape job.,"{u'count': u'1902', u'sum': u'0.00753963499999999', u'quantiles': {u'0.9': u'5.265e-06', u'0.5': u'2.437e-06', u'0.99': u'1.2937e-05'}, u'labels': {u'collector': u'textfile', u'result': u'success'}}",node_exporter_scrape_duration_seconds,SUMMARY
+8,node_exporter: Duration of a scrape job.,"{u'count': u'1902', u'sum': u'0.029502658000000022', u'quantiles': {u'0.9': u'1.9574000000000003e-05', u'0.5': u'9.199000000000001e-06', u'0.99': u'3.6106e-05'}, u'labels': {u'collector': u'time', u'result': u'success'}}",node_exporter_scrape_duration_seconds,SUMMARY
+0,"Tcp ActiveOpens from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Tcp_ActiveOpens,GAUGE
+0,"TcpExt RcvPruned from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_RcvPruned,GAUGE
+0,VmallocTotal from /proc/meminfo.,{u'value': u'3.5184372087808e+13'},node_memory_VmallocTotal,GAUGE
+0,"TcpExt TCPTimeWaitOverflow from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPTimeWaitOverflow,GAUGE
+0,errs transmit from /proc/net/dev.,"{u'labels': {u'device': u'eth0'}, u'value': u'0'}",node_network_transmit_errs,GAUGE
+1,errs transmit from /proc/net/dev.,"{u'labels': {u'device': u'eth1'}, u'value': u'0'}",node_network_transmit_errs,GAUGE
+2,errs transmit from /proc/net/dev.,"{u'labels': {u'device': u'eth2'}, u'value': u'0'}",node_network_transmit_errs,GAUGE
+3,errs transmit from /proc/net/dev.,"{u'labels': {u'device': u'eth3'}, u'value': u'0'}",node_network_transmit_errs,GAUGE
+4,errs transmit from /proc/net/dev.,"{u'labels': {u'device': u'lo'}, u'value': u'0'}",node_network_transmit_errs,GAUGE
+0,"TcpExt TCPSACKDiscard from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPSACKDiscard,GAUGE
+0,"Ip DefaultTTL from /proc/net/{netstat,snmp}.",{u'value': u'64'},node_netstat_Ip_DefaultTTL,GAUGE
+0,frame transmit from /proc/net/dev.,"{u'labels': {u'device': u'eth0'}, u'value': u'0'}",node_network_transmit_frame,GAUGE
+1,frame transmit from /proc/net/dev.,"{u'labels': {u'device': u'eth1'}, u'value': u'0'}",node_network_transmit_frame,GAUGE
+2,frame transmit from /proc/net/dev.,"{u'labels': {u'device': u'eth2'}, u'value': u'0'}",node_network_transmit_frame,GAUGE
+3,frame transmit from /proc/net/dev.,"{u'labels': {u'device': u'eth3'}, u'value': u'0'}",node_network_transmit_frame,GAUGE
+4,frame transmit from /proc/net/dev.,"{u'labels': {u'device': u'lo'}, u'value': u'0'}",node_network_transmit_frame,GAUGE
+0,"Ip FragCreates from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Ip_FragCreates,GAUGE
+0,"TcpExt TCPOFOMerge from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPOFOMerge,GAUGE
+0,MemTotal from /proc/meminfo.,{u'value': u'2.074021888e+09'},node_memory_MemTotal,GAUGE
+0,SwapFree from /proc/meminfo.,{u'value': u'5.34769664e+08'},node_memory_SwapFree,GAUGE
+0,"Udp SndbufErrors from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Udp_SndbufErrors,GAUGE
+0,"IpExt OutBcastOctets from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_IpExt_OutBcastOctets,GAUGE
+0,"IpExt OutOctets from /proc/net/{netstat,snmp}.",{u'value': u'1.3598884e+07'},node_netstat_IpExt_OutOctets,GAUGE
+0,Resident memory size in bytes.,{u'value': u'1.4303232e+07'},process_resident_memory_bytes,GAUGE
+0,Committed_AS from /proc/meminfo.,{u'value': u'1.08027904e+08'},node_memory_Committed_AS,GAUGE
+0,"Ip InDiscards from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Ip_InDiscards,GAUGE
+0,HardwareCorrupted from /proc/meminfo.,{u'value': u'0'},node_memory_HardwareCorrupted,GAUGE
+0,"TcpExt TCPFastOpenActive from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPFastOpenActive,GAUGE
+0,VmallocChunk from /proc/meminfo.,{u'value': u'3.5184337805312e+13'},node_memory_VmallocChunk,GAUGE
+0,The HTTP request latencies in microseconds.,"{u'count': u'1883', u'sum': u'2.0067407172000013e+07', u'quantiles': {u'0.9': u'14315.632', u'0.5': u'7709.346', u'0.99': u'19956.644'}, u'labels': {u'handler': u'prometheus'}}",http_request_duration_microseconds,SUMMARY
+0,AnonHugePages from /proc/meminfo.,{u'value': u'8.388608e+06'},node_memory_AnonHugePages,GAUGE
+0,"Tcp MaxConn from /proc/net/{netstat,snmp}.",{u'value': u'-1'},node_netstat_Tcp_MaxConn,GAUGE
+0,"TcpExt TCPRcvCoalesce from /proc/net/{netstat,snmp}.",{u'value': u'1'},node_netstat_TcpExt_TCPRcvCoalesce,GAUGE
+0,"TcpExt TCPSackRecovery from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPSackRecovery,GAUGE
+0,"TcpExt TWKilled from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TWKilled,GAUGE
+0,"Ip InUnknownProtos from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Ip_InUnknownProtos,GAUGE
+0,"Tcp InErrs from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Tcp_InErrs,GAUGE
+0,"IpExt InECT1Pkts from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_IpExt_InECT1Pkts,GAUGE
+0,fifo transmit from /proc/net/dev.,"{u'labels': {u'device': u'eth0'}, u'value': u'0'}",node_network_transmit_fifo,GAUGE
+1,fifo transmit from /proc/net/dev.,"{u'labels': {u'device': u'eth1'}, u'value': u'0'}",node_network_transmit_fifo,GAUGE
+2,fifo transmit from /proc/net/dev.,"{u'labels': {u'device': u'eth2'}, u'value': u'0'}",node_network_transmit_fifo,GAUGE
+3,fifo transmit from /proc/net/dev.,"{u'labels': {u'device': u'eth3'}, u'value': u'0'}",node_network_transmit_fifo,GAUGE
+4,fifo transmit from /proc/net/dev.,"{u'labels': {u'device': u'lo'}, u'value': u'0'}",node_network_transmit_fifo,GAUGE
+0,"TcpExt TCPDSACKIgnoredNoUndo from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPDSACKIgnoredNoUndo,GAUGE
+0,The number of reads merged. See https://www.kernel.org/doc/Documentation/iostats.txt.,"{u'labels': {u'device': u'sda'}, u'value': u'1659'}",node_disk_reads_merged,COUNTER
+1,The number of reads merged. See https://www.kernel.org/doc/Documentation/iostats.txt.,"{u'labels': {u'device': u'sr0'}, u'value': u'0'}",node_disk_reads_merged,COUNTER
+0,"Ip ReasmReqds from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Ip_ReasmReqds,GAUGE
+0,"Ip OutNoRoutes from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Ip_OutNoRoutes,GAUGE
+0,"IpExt InTruncatedPkts from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_IpExt_InTruncatedPkts,GAUGE
+0,"TcpExt TCPTimeouts from /proc/net/{netstat,snmp}.",{u'value': u'7'},node_netstat_TcpExt_TCPTimeouts,GAUGE
+0,"TcpExt TCPBacklogDrop from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPBacklogDrop,GAUGE
+0,The HTTP response sizes in bytes.,"{u'count': u'1886', u'sum': u'1.1858247e+07', u'quantiles': {u'0.9': u'6307', u'0.5': u'6299', u'0.99': u'6311'}, u'labels': {u'handler': u'prometheus'}}",http_response_size_bytes,SUMMARY
+0,Slab from /proc/meminfo.,{u'value': u'1.8612224e+07'},node_memory_Slab,GAUGE
+0,"TcpExt TCPFullUndo from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPFullUndo,GAUGE
+0,frame receive from /proc/net/dev.,"{u'labels': {u'device': u'eth0'}, u'value': u'0'}",node_network_receive_frame,GAUGE
+1,frame receive from /proc/net/dev.,"{u'labels': {u'device': u'eth1'}, u'value': u'0'}",node_network_receive_frame,GAUGE
+2,frame receive from /proc/net/dev.,"{u'labels': {u'device': u'eth2'}, u'value': u'0'}",node_network_receive_frame,GAUGE
+3,frame receive from /proc/net/dev.,"{u'labels': {u'device': u'eth3'}, u'value': u'0'}",node_network_receive_frame,GAUGE
+4,frame receive from /proc/net/dev.,"{u'labels': {u'device': u'lo'}, u'value': u'0'}",node_network_receive_frame,GAUGE
+0,"UdpLite NoPorts from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_UdpLite_NoPorts,GAUGE
+0,Buffers from /proc/meminfo.,{u'value': u'1.2812288e+07'},node_memory_Buffers,GAUGE
+0,"Ip FragFails from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Ip_FragFails,GAUGE
+0,"TcpExt TCPSackRecoveryFail from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPSackRecoveryFail,GAUGE
+0,"TcpExt BusyPollRxPackets from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_BusyPollRxPackets,GAUGE
+0,"Icmp InRedirects from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Icmp_InRedirects,GAUGE
+0,"TcpExt TCPFACKReorder from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPFACKReorder,GAUGE
+0,"TcpExt TCPRcvCollapsed from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPRcvCollapsed,GAUGE
+0,"Icmp OutDestUnreachs from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Icmp_OutDestUnreachs,GAUGE
+0,"UdpLite RcvbufErrors from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_UdpLite_RcvbufErrors,GAUGE
+0,"TcpExt TCPLostRetransmit from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPLostRetransmit,GAUGE
+0,"Tcp AttemptFails from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Tcp_AttemptFails,GAUGE
+0,"Icmp OutSrcQuenchs from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Icmp_OutSrcQuenchs,GAUGE
+0,"TcpExt TCPOFODrop from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPOFODrop,GAUGE
+0,"Node boot time, in unixtime.",{u'value': u'1.459098407e+09'},node_boot_time,GAUGE
+0,KernelStack from /proc/meminfo.,{u'value': u'745472'},node_memory_KernelStack,GAUGE
+0,"Ip InReceives from /proc/net/{netstat,snmp}.",{u'value': u'16439'},node_netstat_Ip_InReceives,GAUGE
+0,errs receive from /proc/net/dev.,"{u'labels': {u'device': u'eth0'}, u'value': u'0'}",node_network_receive_errs,GAUGE
+1,errs receive from /proc/net/dev.,"{u'labels': {u'device': u'eth1'}, u'value': u'0'}",node_network_receive_errs,GAUGE
+2,errs receive from /proc/net/dev.,"{u'labels': {u'device': u'eth2'}, u'value': u'0'}",node_network_receive_errs,GAUGE
+3,errs receive from /proc/net/dev.,"{u'labels': {u'device': u'eth3'}, u'value': u'0'}",node_network_receive_errs,GAUGE
+4,errs receive from /proc/net/dev.,"{u'labels': {u'device': u'lo'}, u'value': u'0'}",node_network_receive_errs,GAUGE
+0,"Icmp OutEchoReps from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Icmp_OutEchoReps,GAUGE
+0,"Ip OutDiscards from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Ip_OutDiscards,GAUGE
+0,The total number of writes completed successfully.,"{u'labels': {u'device': u'sda'}, u'value': u'208'}",node_disk_writes_completed,COUNTER
+1,The total number of writes completed successfully.,"{u'labels': {u'device': u'sr0'}, u'value': u'0'}",node_disk_writes_completed,COUNTER
+0,Active_anon from /proc/meminfo.,{u'value': u'1.9165184e+07'},node_memory_Active_anon,GAUGE
+0,"TcpExt TWRecycled from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TWRecycled,GAUGE
+0,"UdpLite InCsumErrors from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_UdpLite_InCsumErrors,GAUGE
+0,"TcpExt OutOfWindowIcmps from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_OutOfWindowIcmps,GAUGE
+0,"Icmp InTimestampReps from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Icmp_InTimestampReps,GAUGE
+0,"Icmp OutRedirects from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Icmp_OutRedirects,GAUGE
+0,"TcpExt TCPSACKReneging from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPSACKReneging,GAUGE
+0,"Icmp InSrcQuenchs from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Icmp_InSrcQuenchs,GAUGE
+0,"Icmp InAddrMaskReps from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Icmp_InAddrMaskReps,GAUGE
+0,1m load average.,{u'value': u'0'},node_load1,GAUGE
+0,Milliseconds spent doing I/Os.,"{u'labels': {u'device': u'sda'}, u'value': u'11616'}",node_disk_io_time_ms,COUNTER
+1,Milliseconds spent doing I/Os.,"{u'labels': {u'device': u'sr0'}, u'value': u'0'}",node_disk_io_time_ms,COUNTER
+0,"TcpExt TCPDSACKOfoSent from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPDSACKOfoSent,GAUGE
+0,Filesystem total file nodes.,"{u'labels': {u'device': u'/dev/disk/by-uuid/64ecdf77-db7b-48a8-9066-abfb837f2e24', u'mountpoint': u'/', u'fstype': u'ext4'}, u'value': u'2.588672e+06'}",node_filesystem_files,GAUGE
+1,Filesystem total file nodes.,"{u'labels': {u'device': u'none', u'mountpoint': u'/run/lock', u'fstype': u'tmpfs'}, u'value': u'253176'}",node_filesystem_files,GAUGE
+2,Filesystem total file nodes.,"{u'labels': {u'device': u'none', u'mountpoint': u'/run/shm', u'fstype': u'tmpfs'}, u'value': u'253176'}",node_filesystem_files,GAUGE
+3,Filesystem total file nodes.,"{u'labels': {u'device': u'none', u'mountpoint': u'/run/user', u'fstype': u'tmpfs'}, u'value': u'253176'}",node_filesystem_files,GAUGE
+4,Filesystem total file nodes.,"{u'labels': {u'device': u'none', u'mountpoint': u'/vagrant', u'fstype': u'vboxsf'}, u'value': u'1000'}",node_filesystem_files,GAUGE
+5,Filesystem total file nodes.,"{u'labels': {u'device': u'rootfs', u'mountpoint': u'/', u'fstype': u'rootfs'}, u'value': u'2.588672e+06'}",node_filesystem_files,GAUGE
+6,Filesystem total file nodes.,"{u'labels': {u'device': u'rpc_pipefs', u'mountpoint': u'/run/rpc_pipefs', u'fstype': u'rpc_pipefs'}, u'value': u'0'}",node_filesystem_files,GAUGE
+7,Filesystem total file nodes.,"{u'labels': {u'device': u'tmpfs', u'mountpoint': u'/run', u'fstype': u'tmpfs'}, u'value': u'253176'}",node_filesystem_files,GAUGE
+0,Total number of forks.,{u'value': u'1086'},node_forks,COUNTER
+0,"Ip InAddrErrors from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Ip_InAddrErrors,GAUGE
+0,"TcpExt SyncookiesRecv from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_SyncookiesRecv,GAUGE
+0,"TcpExt TCPRenoReorder from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPRenoReorder,GAUGE
+0,Mapped from /proc/meminfo.,{u'value': u'9.334784e+06'},node_memory_Mapped,GAUGE
+0,"TcpExt TCPLossProbes from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPLossProbes,GAUGE
+0,DirectMap4k from /proc/meminfo.,{u'value': u'5.4460416e+07'},node_memory_DirectMap4k,GAUGE
+0,"Tcp EstabResets from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Tcp_EstabResets,GAUGE
+0,"TcpExt TCPFastOpenPassive from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPFastOpenPassive,GAUGE
+0,"Udp InDatagrams from /proc/net/{netstat,snmp}.",{u'value': u'20'},node_netstat_Udp_InDatagrams,GAUGE
+0,"Udp InErrors from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Udp_InErrors,GAUGE
+0,"Icmp InParmProbs from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Icmp_InParmProbs,GAUGE
+0,The number of writes merged. See https://www.kernel.org/doc/Documentation/iostats.txt.,"{u'labels': {u'device': u'sda'}, u'value': u'351'}",node_disk_writes_merged,COUNTER
+1,The number of writes merged. See https://www.kernel.org/doc/Documentation/iostats.txt.,"{u'labels': {u'device': u'sr0'}, u'value': u'0'}",node_disk_writes_merged,COUNTER
+0,"TcpExt EmbryonicRsts from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_EmbryonicRsts,GAUGE
+0,"Icmp InTimeExcds from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Icmp_InTimeExcds,GAUGE
+0,"TcpExt TCPSlowStartRetrans from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPSlowStartRetrans,GAUGE
+0,"UdpLite InDatagrams from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_UdpLite_InDatagrams,GAUGE
+0,"Tcp RtoMax from /proc/net/{netstat,snmp}.",{u'value': u'120000'},node_netstat_Tcp_RtoMax,GAUGE
+0,The total number of milliseconds spent by all reads.,"{u'labels': {u'device': u'sda'}, u'value': u'678476'}",node_disk_read_time_ms,COUNTER
+1,The total number of milliseconds spent by all reads.,"{u'labels': {u'device': u'sr0'}, u'value': u'0'}",node_disk_read_time_ms,COUNTER
+0,VmallocUsed from /proc/meminfo.,{u'value': u'2.8987392e+07'},node_memory_VmallocUsed,GAUGE
+0,"UdpLite SndbufErrors from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_UdpLite_SndbufErrors,GAUGE
+0,"TcpExt TCPHPHitsToUser from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPHPHitsToUser,GAUGE
+0,"Ip Forwarding from /proc/net/{netstat,snmp}.",{u'value': u'2'},node_netstat_Ip_Forwarding,GAUGE
+0,Start time of the process since unix epoch in seconds.,{u'value': u'1.45909845681e+09'},process_start_time_seconds,GAUGE
+0,The total number of reads completed successfully.,"{u'labels': {u'device': u'sda'}, u'value': u'3029'}",node_disk_reads_completed,COUNTER
+1,The total number of reads completed successfully.,"{u'labels': {u'device': u'sr0'}, u'value': u'0'}",node_disk_reads_completed,COUNTER
+0,"TcpExt TCPDSACKRecv from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPDSACKRecv,GAUGE
+0,Number of processes blocked waiting for I/O to complete.,{u'value': u'0'},node_procs_blocked,GAUGE
+0,"TcpExt TCPDSACKIgnoredOld from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPDSACKIgnoredOld,GAUGE
+0,"IpExt InBcastOctets from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_IpExt_InBcastOctets,GAUGE
+0,"Tcp RetransSegs from /proc/net/{netstat,snmp}.",{u'value': u'7'},node_netstat_Tcp_RetransSegs,GAUGE
+0,Active from /proc/meminfo.,{u'value': u'3.7572608e+07'},node_memory_Active,GAUGE
+0,"Icmp OutAddrMasks from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Icmp_OutAddrMasks,GAUGE
+0,"Icmp OutTimeExcds from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Icmp_OutTimeExcds,GAUGE
+0,"TcpExt TCPReqQFullDoCookies from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPReqQFullDoCookies,GAUGE
+0,"TcpExt TCPChallengeACK from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPChallengeACK,GAUGE
+0,"IpExt InOctets from /proc/net/{netstat,snmp}.",{u'value': u'1.292811e+06'},node_netstat_IpExt_InOctets,GAUGE
+0,A summary of the GC invocation durations.,"{u'count': u'1203', u'sum': u'1.782300197', u'quantiles': {u'1': u'0.003213239', u'0.25': u'0.0009372470000000001', u'0.5': u'0.001059244', u'0.75': u'0.001621693', u'0': u'0.00043395500000000003'}}",go_gc_duration_seconds,SUMMARY
+0,"Icmp InCsumErrors from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Icmp_InCsumErrors,GAUGE
+0,"TcpExt TCPSACKReorder from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPSACKReorder,GAUGE
+0,"Tcp RtoMin from /proc/net/{netstat,snmp}.",{u'value': u'200'},node_netstat_Tcp_RtoMin,GAUGE
+0,Number of open file descriptors.,{u'value': u'7'},process_open_fds,GAUGE
+0,Maximum number of open file descriptors.,{u'value': u'1024'},process_max_fds,GAUGE
+0,"TcpExt PAWSActive from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_PAWSActive,GAUGE
+0,drop transmit from /proc/net/dev.,"{u'labels': {u'device': u'eth0'}, u'value': u'0'}",node_network_transmit_drop,GAUGE
+1,drop transmit from /proc/net/dev.,"{u'labels': {u'device': u'eth1'}, u'value': u'0'}",node_network_transmit_drop,GAUGE
+2,drop transmit from /proc/net/dev.,"{u'labels': {u'device': u'eth2'}, u'value': u'0'}",node_network_transmit_drop,GAUGE
+3,drop transmit from /proc/net/dev.,"{u'labels': {u'device': u'eth3'}, u'value': u'0'}",node_network_transmit_drop,GAUGE
+4,drop transmit from /proc/net/dev.,"{u'labels': {u'device': u'lo'}, u'value': u'0'}",node_network_transmit_drop,GAUGE
+0,HugePages_Free from /proc/meminfo.,{u'value': u'0'},node_memory_HugePages_Free,GAUGE
+0,compressed receive from /proc/net/dev.,"{u'labels': {u'device': u'eth0'}, u'value': u'0'}",node_network_receive_compressed,GAUGE
+1,compressed receive from /proc/net/dev.,"{u'labels': {u'device': u'eth1'}, u'value': u'0'}",node_network_receive_compressed,GAUGE
+2,compressed receive from /proc/net/dev.,"{u'labels': {u'device': u'eth2'}, u'value': u'0'}",node_network_receive_compressed,GAUGE
+3,compressed receive from /proc/net/dev.,"{u'labels': {u'device': u'eth3'}, u'value': u'0'}",node_network_receive_compressed,GAUGE
+4,compressed receive from /proc/net/dev.,"{u'labels': {u'device': u'lo'}, u'value': u'0'}",node_network_receive_compressed,GAUGE
+0,"TcpExt SyncookiesFailed from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_SyncookiesFailed,GAUGE
+0,"Tcp PassiveOpens from /proc/net/{netstat,snmp}.",{u'value': u'2124'},node_netstat_Tcp_PassiveOpens,GAUGE
+0,"Icmp OutMsgs from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Icmp_OutMsgs,GAUGE
+0,"TcpExt TCPDirectCopyFromPrequeue from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPDirectCopyFromPrequeue,GAUGE
+0,"TcpExt TCPPartialUndo from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPPartialUndo,GAUGE
+0,"Icmp InMsgs from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Icmp_InMsgs,GAUGE
+0,packets transmit from /proc/net/dev.,"{u'labels': {u'device': u'eth0'}, u'value': u'18074'}",node_network_transmit_packets,GAUGE
+1,packets transmit from /proc/net/dev.,"{u'labels': {u'device': u'eth1'}, u'value': u'0'}",node_network_transmit_packets,GAUGE
+2,packets transmit from /proc/net/dev.,"{u'labels': {u'device': u'eth2'}, u'value': u'0'}",node_network_transmit_packets,GAUGE
+3,packets transmit from /proc/net/dev.,"{u'labels': {u'device': u'eth3'}, u'value': u'0'}",node_network_transmit_packets,GAUGE
+4,packets transmit from /proc/net/dev.,"{u'labels': {u'device': u'lo'}, u'value': u'0'}",node_network_transmit_packets,GAUGE
+0,"TcpExt TCPOFOQueue from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPOFOQueue,GAUGE
+0,SReclaimable from /proc/meminfo.,{u'value': u'9.58464e+06'},node_memory_SReclaimable,GAUGE
+0,"TcpExt TCPFastOpenCookieReqd from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPFastOpenCookieReqd,GAUGE
+0,"Icmp OutEchos from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Icmp_OutEchos,GAUGE
+0,"IpExt InECT0Pkts from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_IpExt_InECT0Pkts,GAUGE
+0,"TcpExt TCPSYNChallenge from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPSYNChallenge,GAUGE
+0,AnonPages from /proc/meminfo.,{u'value': u'2.1188608e+07'},node_memory_AnonPages,GAUGE
+0,"TcpExt TCPSackMerged from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPSackMerged,GAUGE
+0,"IpExt InBcastPkts from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_IpExt_InBcastPkts,GAUGE
+0,"TcpExt PAWSEstab from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_PAWSEstab,GAUGE
+0,"TcpExt DelayedACKs from /proc/net/{netstat,snmp}.",{u'value': u'5'},node_netstat_TcpExt_DelayedACKs,GAUGE
+0,"Tcp OutSegs from /proc/net/{netstat,snmp}.",{u'value': u'17753'},node_netstat_Tcp_OutSegs,GAUGE
+0,"IpExt InCsumErrors from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_IpExt_InCsumErrors,GAUGE
+0,Filesystem space available to non-root users in bytes.,"{u'labels': {u'device': u'/dev/disk/by-uuid/64ecdf77-db7b-48a8-9066-abfb837f2e24', u'mountpoint': u'/', u'fstype': u'ext4'}, u'value': u'3.7806538752e+10'}",node_filesystem_avail,GAUGE
+1,Filesystem space available to non-root users in bytes.,"{u'labels': {u'device': u'none', u'mountpoint': u'/run/lock', u'fstype': u'tmpfs'}, u'value': u'5.24288e+06'}",node_filesystem_avail,GAUGE
+2,Filesystem space available to non-root users in bytes.,"{u'labels': {u'device': u'none', u'mountpoint': u'/run/shm', u'fstype': u'tmpfs'}, u'value': u'1.037008896e+09'}",node_filesystem_avail,GAUGE
+3,Filesystem space available to non-root users in bytes.,"{u'labels': {u'device': u'none', u'mountpoint': u'/run/user', u'fstype': u'tmpfs'}, u'value': u'1.048576e+08'}",node_filesystem_avail,GAUGE
+4,Filesystem space available to non-root users in bytes.,"{u'labels': {u'device': u'none', u'mountpoint': u'/vagrant', u'fstype': u'vboxsf'}, u'value': u'4.2414829568e+10'}",node_filesystem_avail,GAUGE
+5,Filesystem space available to non-root users in bytes.,"{u'labels': {u'device': u'rootfs', u'mountpoint': u'/', u'fstype': u'rootfs'}, u'value': u'3.7806538752e+10'}",node_filesystem_avail,GAUGE
+6,Filesystem space available to non-root users in bytes.,"{u'labels': {u'device': u'rpc_pipefs', u'mountpoint': u'/run/rpc_pipefs', u'fstype': u'rpc_pipefs'}, u'value': u'0'}",node_filesystem_avail,GAUGE
+7,Filesystem space available to non-root users in bytes.,"{u'labels': {u'device': u'tmpfs', u'mountpoint': u'/run', u'fstype': u'tmpfs'}, u'value': u'2.07015936e+08'}",node_filesystem_avail,GAUGE
+0,"Ip ReasmTimeout from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Ip_ReasmTimeout,GAUGE
+0,"TcpExt TCPDirectCopyFromBacklog from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPDirectCopyFromBacklog,GAUGE
+0,"TcpExt TCPAbortOnLinger from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPAbortOnLinger,GAUGE
+0,"TcpExt TCPSchedulerFailed from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPSchedulerFailed,GAUGE
+0,"TcpExt TCPSpuriousRTOs from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPSpuriousRTOs,GAUGE
+0,The weighted # of milliseconds spent doing I/Os. See https://www.kernel.org/doc/Documentation/iostats.txt.,"{u'labels': {u'device': u'sda'}, u'value': u'678644'}",node_disk_io_time_weighted,COUNTER
+1,The weighted # of milliseconds spent doing I/Os. See https://www.kernel.org/doc/Documentation/iostats.txt.,"{u'labels': {u'device': u'sr0'}, u'value': u'0'}",node_disk_io_time_weighted,COUNTER
+0,"TcpExt TCPLossFailures from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPLossFailures,GAUGE
+0,"TcpExt TCPAbortOnMemory from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPAbortOnMemory,GAUGE
+0,"TcpExt TCPLossUndo from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPLossUndo,GAUGE
+0,Unevictable from /proc/meminfo.,{u'value': u'0'},node_memory_Unevictable,GAUGE
+0,"TcpExt TCPDSACKOldSent from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPDSACKOldSent,GAUGE
+0,compressed transmit from /proc/net/dev.,"{u'labels': {u'device': u'eth0'}, u'value': u'0'}",node_network_transmit_compressed,GAUGE
+1,compressed transmit from /proc/net/dev.,"{u'labels': {u'device': u'eth1'}, u'value': u'0'}",node_network_transmit_compressed,GAUGE
+2,compressed transmit from /proc/net/dev.,"{u'labels': {u'device': u'eth2'}, u'value': u'0'}",node_network_transmit_compressed,GAUGE
+3,compressed transmit from /proc/net/dev.,"{u'labels': {u'device': u'eth3'}, u'value': u'0'}",node_network_transmit_compressed,GAUGE
+4,compressed transmit from /proc/net/dev.,"{u'labels': {u'device': u'lo'}, u'value': u'0'}",node_network_transmit_compressed,GAUGE
+0,"Ip ReasmFails from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Ip_ReasmFails,GAUGE
+0,bytes receive from /proc/net/dev.,"{u'labels': {u'device': u'eth0'}, u'value': u'1.628801e+06'}",node_network_receive_bytes,GAUGE
+1,bytes receive from /proc/net/dev.,"{u'labels': {u'device': u'eth1'}, u'value': u'0'}",node_network_receive_bytes,GAUGE
+2,bytes receive from /proc/net/dev.,"{u'labels': {u'device': u'eth2'}, u'value': u'0'}",node_network_receive_bytes,GAUGE
+3,bytes receive from /proc/net/dev.,"{u'labels': {u'device': u'eth3'}, u'value': u'0'}",node_network_receive_bytes,GAUGE
+4,bytes receive from /proc/net/dev.,"{u'labels': {u'device': u'lo'}, u'value': u'0'}",node_network_receive_bytes,GAUGE
+0,"TcpExt OfoPruned from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_OfoPruned,GAUGE
+0,"TcpExt TCPLossProbeRecovery from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPLossProbeRecovery,GAUGE
+0,bytes transmit from /proc/net/dev.,"{u'labels': {u'device': u'eth0'}, u'value': u'1.806484e+07'}",node_network_transmit_bytes,GAUGE
+1,bytes transmit from /proc/net/dev.,"{u'labels': {u'device': u'eth1'}, u'value': u'0'}",node_network_transmit_bytes,GAUGE
+2,bytes transmit from /proc/net/dev.,"{u'labels': {u'device': u'eth2'}, u'value': u'0'}",node_network_transmit_bytes,GAUGE
+3,bytes transmit from /proc/net/dev.,"{u'labels': {u'device': u'eth3'}, u'value': u'0'}",node_network_transmit_bytes,GAUGE
+4,bytes transmit from /proc/net/dev.,"{u'labels': {u'device': u'lo'}, u'value': u'0'}",node_network_transmit_bytes,GAUGE
+0,The HTTP request sizes in bytes.,"{u'count': u'1884', u'sum': u'460724', u'quantiles': {u'0.9': u'216', u'0.5': u'216', u'0.99': u'308'}, u'labels': {u'handler': u'prometheus'}}",http_request_size_bytes,SUMMARY
+0,Active_file from /proc/meminfo.,{u'value': u'1.8407424e+07'},node_memory_Active_file,GAUGE
+0,"TcpExt SyncookiesSent from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_SyncookiesSent,GAUGE
+0,DirectMap2M from /proc/meminfo.,{u'value': u'2.067791872e+09'},node_memory_DirectMap2M,GAUGE
+0,Hugepagesize from /proc/meminfo.,{u'value': u'2.097152e+06'},node_memory_Hugepagesize,GAUGE
+0,"IpExt InMcastOctets from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_IpExt_InMcastOctets,GAUGE
+0,fifo receive from /proc/net/dev.,"{u'labels': {u'device': u'eth0'}, u'value': u'0'}",node_network_receive_fifo,GAUGE
+1,fifo receive from /proc/net/dev.,"{u'labels': {u'device': u'eth1'}, u'value': u'0'}",node_network_receive_fifo,GAUGE
+2,fifo receive from /proc/net/dev.,"{u'labels': {u'device': u'eth2'}, u'value': u'0'}",node_network_receive_fifo,GAUGE
+3,fifo receive from /proc/net/dev.,"{u'labels': {u'device': u'eth3'}, u'value': u'0'}",node_network_receive_fifo,GAUGE
+4,fifo receive from /proc/net/dev.,"{u'labels': {u'device': u'lo'}, u'value': u'0'}",node_network_receive_fifo,GAUGE
+0,multicast receive from /proc/net/dev.,"{u'labels': {u'device': u'eth0'}, u'value': u'0'}",node_network_receive_multicast,GAUGE
+1,multicast receive from /proc/net/dev.,"{u'labels': {u'device': u'eth1'}, u'value': u'0'}",node_network_receive_multicast,GAUGE
+2,multicast receive from /proc/net/dev.,"{u'labels': {u'device': u'eth2'}, u'value': u'0'}",node_network_receive_multicast,GAUGE
+3,multicast receive from /proc/net/dev.,"{u'labels': {u'device': u'eth3'}, u'value': u'0'}",node_network_receive_multicast,GAUGE
+4,multicast receive from /proc/net/dev.,"{u'labels': {u'device': u'lo'}, u'value': u'0'}",node_network_receive_multicast,GAUGE
+0,"TcpExt TCPPrequeueDropped from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPPrequeueDropped,GAUGE
+0,"Udp InCsumErrors from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Udp_InCsumErrors,GAUGE
+0,"TcpExt TCPDeferAcceptDrop from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPDeferAcceptDrop,GAUGE
+0,CommitLimit from /proc/meminfo.,{u'value': u'1.57177856e+09'},node_memory_CommitLimit,GAUGE
+0,"Ip ForwDatagrams from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Ip_ForwDatagrams,GAUGE
+0,Filesystem total free file nodes.,"{u'labels': {u'device': u'/dev/disk/by-uuid/64ecdf77-db7b-48a8-9066-abfb837f2e24', u'mountpoint': u'/', u'fstype': u'ext4'}, u'value': u'2.516101e+06'}",node_filesystem_files_free,GAUGE
+1,Filesystem total free file nodes.,"{u'labels': {u'device': u'none', u'mountpoint': u'/run/lock', u'fstype': u'tmpfs'}, u'value': u'253175'}",node_filesystem_files_free,GAUGE
+2,Filesystem total free file nodes.,"{u'labels': {u'device': u'none', u'mountpoint': u'/run/shm', u'fstype': u'tmpfs'}, u'value': u'253175'}",node_filesystem_files_free,GAUGE
+3,Filesystem total free file nodes.,"{u'labels': {u'device': u'none', u'mountpoint': u'/run/user', u'fstype': u'tmpfs'}, u'value': u'253174'}",node_filesystem_files_free,GAUGE
+4,Filesystem total free file nodes.,"{u'labels': {u'device': u'none', u'mountpoint': u'/vagrant', u'fstype': u'vboxsf'}, u'value': u'1000'}",node_filesystem_files_free,GAUGE
+5,Filesystem total free file nodes.,"{u'labels': {u'device': u'rootfs', u'mountpoint': u'/', u'fstype': u'rootfs'}, u'value': u'2.516101e+06'}",node_filesystem_files_free,GAUGE
+6,Filesystem total free file nodes.,"{u'labels': {u'device': u'rpc_pipefs', u'mountpoint': u'/run/rpc_pipefs', u'fstype': u'rpc_pipefs'}, u'value': u'0'}",node_filesystem_files_free,GAUGE
+7,Filesystem total free file nodes.,"{u'labels': {u'device': u'tmpfs', u'mountpoint': u'/run', u'fstype': u'tmpfs'}, u'value': u'252832'}",node_filesystem_files_free,GAUGE
+0,"TcpExt DelayedACKLocked from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_DelayedACKLocked,GAUGE
+0,Inactive_file from /proc/meminfo.,{u'value': u'2.19570176e+08'},node_memory_Inactive_file,GAUGE
+0,"TcpExt TCPMD5NotFound from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPMD5NotFound,GAUGE
+0,Bounce from /proc/meminfo.,{u'value': u'0'},node_memory_Bounce,GAUGE
+0,"Ip InDelivers from /proc/net/{netstat,snmp}.",{u'value': u'16408'},node_netstat_Ip_InDelivers,GAUGE
+0,"TcpExt TW from /proc/net/{netstat,snmp}.",{u'value': u'580'},node_netstat_TcpExt_TW,GAUGE
+0,"TcpExt TCPTSReorder from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPTSReorder,GAUGE
+0,"IpExt OutMcastPkts from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_IpExt_OutMcastPkts,GAUGE
+0,Number of processes in runnable state.,{u'value': u'2'},node_procs_running,GAUGE
+0,"Tcp CurrEstab from /proc/net/{netstat,snmp}.",{u'value': u'1'},node_netstat_Tcp_CurrEstab,GAUGE
+0,"Icmp OutErrors from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Icmp_OutErrors,GAUGE
+0,"TcpExt TCPFastRetrans from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPFastRetrans,GAUGE
+0,"UdpLite OutDatagrams from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_UdpLite_OutDatagrams,GAUGE
+0,"IpExt InNoECTPkts from /proc/net/{netstat,snmp}.",{u'value': u'16289'},node_netstat_IpExt_InNoECTPkts,GAUGE
+0,"IpExt InMcastPkts from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_IpExt_InMcastPkts,GAUGE
+0,HugePages_Surp from /proc/meminfo.,{u'value': u'0'},node_memory_HugePages_Surp,GAUGE
+0,"TcpExt TCPDSACKUndo from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPDSACKUndo,GAUGE
+0,"TcpExt TCPFastOpenListenOverflow from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPFastOpenListenOverflow,GAUGE
+0,"Udp RcvbufErrors from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Udp_RcvbufErrors,GAUGE
+0,"Icmp InDestUnreachs from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Icmp_InDestUnreachs,GAUGE
+0,PageTables from /proc/meminfo.,{u'value': u'1.601536e+06'},node_memory_PageTables,GAUGE
+0,"IpExt OutMcastOctets from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_IpExt_OutMcastOctets,GAUGE
+0,HugePages_Rsvd from /proc/meminfo.,{u'value': u'0'},node_memory_HugePages_Rsvd,GAUGE
+0,multicast transmit from /proc/net/dev.,"{u'labels': {u'device': u'eth0'}, u'value': u'0'}",node_network_transmit_multicast,GAUGE
+1,multicast transmit from /proc/net/dev.,"{u'labels': {u'device': u'eth1'}, u'value': u'0'}",node_network_transmit_multicast,GAUGE
+2,multicast transmit from /proc/net/dev.,"{u'labels': {u'device': u'eth2'}, u'value': u'0'}",node_network_transmit_multicast,GAUGE
+3,multicast transmit from /proc/net/dev.,"{u'labels': {u'device': u'eth3'}, u'value': u'0'}",node_network_transmit_multicast,GAUGE
+4,multicast transmit from /proc/net/dev.,"{u'labels': {u'device': u'lo'}, u'value': u'0'}",node_network_transmit_multicast,GAUGE
+0,Mlocked from /proc/meminfo.,{u'value': u'0'},node_memory_Mlocked,GAUGE
+0,"Ip OutRequests from /proc/net/{netstat,snmp}.",{u'value': u'14896'},node_netstat_Ip_OutRequests,GAUGE
+0,"TcpExt TCPSackFailures from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPSackFailures,GAUGE
+0,Total number of context switches.,{u'value': u'482109'},node_context_switches,COUNTER
+0,"TcpExt TCPMemoryPressures from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPMemoryPressures,GAUGE
+0,MemFree from /proc/meminfo.,{u'value': u'1.770123264e+09'},node_memory_MemFree,GAUGE
+0,This is the total number of milliseconds spent by all writes.,"{u'labels': {u'device': u'sda'}, u'value': u'236'}",node_disk_write_time_ms,COUNTER
+1,This is the total number of milliseconds spent by all writes.,"{u'labels': {u'device': u'sr0'}, u'value': u'0'}",node_disk_write_time_ms,COUNTER
+0,"TcpExt ListenDrops from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_ListenDrops,GAUGE
+0,Writeback from /proc/meminfo.,{u'value': u'0'},node_memory_Writeback,GAUGE
+0,"TcpExt TCPRenoRecoveryFail from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPRenoRecoveryFail,GAUGE
+0,"TcpExt TCPAbortOnClose from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPAbortOnClose,GAUGE
+0,"TcpExt LockDroppedIcmps from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_LockDroppedIcmps,GAUGE
+0,"Icmp InAddrMasks from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Icmp_InAddrMasks,GAUGE
+0,"Ip ReasmOKs from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Ip_ReasmOKs,GAUGE
+0,Cached from /proc/meminfo.,{u'value': u'2.25554432e+08'},node_memory_Cached,GAUGE
+0,"TcpExt ArpFilter from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_ArpFilter,GAUGE
+0,"TcpExt TCPSpuriousRtxHostQueues from /proc/net/{netstat,snmp}.",{u'value': u'7'},node_netstat_TcpExt_TCPSpuriousRtxHostQueues,GAUGE
+0,"TcpExt TCPFastOpenPassiveFail from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPFastOpenPassiveFail,GAUGE
+0,"TcpExt TCPPrequeued from /proc/net/{netstat,snmp}.",{u'value': u'1'},node_netstat_TcpExt_TCPPrequeued,GAUGE
+0,"TcpExt PAWSPassive from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_PAWSPassive,GAUGE
+0,"Icmp InTimestamps from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_Icmp_InTimestamps,GAUGE
+0,"TcpExt TCPReqQFullDrop from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPReqQFullDrop,GAUGE
+0,Total number of interrupts serviced.,{u'value': u'308599'},node_intr,COUNTER
+0,drop receive from /proc/net/dev.,"{u'labels': {u'device': u'eth0'}, u'value': u'0'}",node_network_receive_drop,GAUGE
+1,drop receive from /proc/net/dev.,"{u'labels': {u'device': u'eth1'}, u'value': u'0'}",node_network_receive_drop,GAUGE
+2,drop receive from /proc/net/dev.,"{u'labels': {u'device': u'eth2'}, u'value': u'0'}",node_network_receive_drop,GAUGE
+3,drop receive from /proc/net/dev.,"{u'labels': {u'device': u'eth3'}, u'value': u'0'}",node_network_receive_drop,GAUGE
+4,drop receive from /proc/net/dev.,"{u'labels': {u'device': u'lo'}, u'value': u'0'}",node_network_receive_drop,GAUGE
+0,"IpExt InCEPkts from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_IpExt_InCEPkts,GAUGE
+0,SwapTotal from /proc/meminfo.,{u'value': u'5.34769664e+08'},node_memory_SwapTotal,GAUGE
+0,"IpExt OutBcastPkts from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_IpExt_OutBcastPkts,GAUGE
+0,HugePages_Total from /proc/meminfo.,{u'value': u'0'},node_memory_HugePages_Total,GAUGE
+0,"Tcp OutRsts from /proc/net/{netstat,snmp}.",{u'value': u'5'},node_netstat_Tcp_OutRsts,GAUGE
+0,"TcpExt TCPPureAcks from /proc/net/{netstat,snmp}.",{u'value': u'4277'},node_netstat_TcpExt_TCPPureAcks,GAUGE
+0,"TcpExt TCPAbortFailed from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPAbortFailed,GAUGE
+0,"TcpExt TCPAbortOnTimeout from /proc/net/{netstat,snmp}.",{u'value': u'0'},node_netstat_TcpExt_TCPAbortOnTimeout,GAUGE
+0,Inactive from /proc/meminfo.,{u'value': u'2.19860992e+08'},node_memory_Inactive,GAUGE

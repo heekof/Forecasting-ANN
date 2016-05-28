@@ -1,7 +1,7 @@
 import math
 import pickle
 import random
-
+import numpy as np
 
 def logistic(x):
     return 1.0 / (1 + math.exp(-x))
@@ -19,6 +19,19 @@ def hyperbolic_tangent(x):
 def deriv_hyperbolic_tangent(x):
     th = math.tanh(x)
     return 1 - th * th
+
+def linear(x):
+    var = np.maximum(x,0)
+    return var
+
+def deriv_linear(x):
+    return 0 if x<=0 else 1
+
+def relu(x):
+    pass
+
+def deriv_relu(x):
+    pass
 
 
 def between(min, max):

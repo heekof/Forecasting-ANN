@@ -2,16 +2,19 @@ import math
 from ann_util import between, make_matrix
 from ann_util import deriv_logistic, logistic
 from ann_util import deriv_hyperbolic_tangent, hyperbolic_tangent
+from ann_util import deriv_linear, linear
 
 use_bias = 1
 
+# Class ANN
 
 class ANN:
 
+    # Layer_sizes defines the structure of the ANN
     def __init__(self, layer_sizes, activation_fun='tanh'):
         """
         Initialize the network.
-        :param activation_fun: tanh or logistic
+        :param activation_fun: tanh, logistic or ReLu
         """
         self.layers = []
         self.learn_rate = 0.1
@@ -24,6 +27,12 @@ class ANN:
         elif activation_fun == 'logistic':
             self.squash = logistic
             self.deriv_squash = deriv_logistic
+        elif activation_fun == 'linear':
+            self.squash = linear
+            self.deriv_squash = deriv_linear
+        elif activation_fun == 'ReLu':
+            self.squash = relu
+            self.deriv_squash = deriv_relu
 
         for l in range(len(layer_sizes)):
             layer_size = layer_sizes[l]
@@ -39,7 +48,9 @@ class ANN:
 
             epoch_error = 0
             for i in range(0, len(inputs)):
-
+                
+        # Do this operation for each input. Go forward and thenn backward !
+                
                 self.set_input(inputs[i])
                 self.forward_propagate()
 
@@ -95,6 +106,7 @@ class ANN:
                     sum_in += dst_layer.weight[i][j] * src_layer.output[i]
 
                 dst_layer.input[j] = sum_in
+                # Here were we have the error
                 dst_layer.output[j + use_bias] = self.squash(sum_in)
 
     def get_output(self):
@@ -112,6 +124,7 @@ class ANN:
             neuron_output = output_layer.output[i + use_bias]
             neuron_error = target_vector[i] - neuron_output
             output_layer.error[i] = self.deriv_squash(output_layer.input[i]) * neuron_error
+            
             sample_error += neuron_error * neuron_error
         sample_error *= 0.5
         return sample_error
@@ -133,6 +146,7 @@ class ANN:
 
                 dst_layer.error[i] = self.deriv_squash(dst_layer.input[i]) * error
 
+# Inner Class Layer
 
 class Layer:
 
@@ -159,12 +173,12 @@ class Layer:
 if __name__ == '__main__':
 
     # a logical function
-    logic_ann = ANN([2,2, 1])
+    logic_ann = ANN([2, 2, 1])
     inputs = [[0.0, 0.0], [0.0, 1.0], [1.0, 0.0], [1.0, 1.0]]
     targets = [[0.0], [1.0], [1.0], [0.0]]
 
     # train and predict
-    logic_ann.train(inputs, targets, 1000)
+    logic_ann.train(inputs, targets, 20000)
     print("Predictions after training")
     for i in range(len(targets)):
         print(inputs[i], logic_ann.predict(inputs[i]))
