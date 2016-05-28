@@ -21,11 +21,18 @@ def deriv_hyperbolic_tangent(x):
     return 1 - th * th
 
 def linear(x):
+<<<<<<< HEAD
     var = np.maximum(x,0)
     return var
 
 def deriv_linear(x):
     return 0 if x<=0 else 1
+=======
+    return x
+
+def deriv_linear(x):
+    return 1
+>>>>>>> 28b30f60d6a7c97fdcdd077a6dce76103cfe7234
 
 def relu(x):
     pass
