@@ -122,6 +122,19 @@ def rolling_avg(X,m):
 def percentage_change(X):
     return [100.0 * a1/a2 - 100 for a1, a2 in zip(X[1:], X)]
 
+def SLO_mapping(ids,feature1,feature2,feature3,feature4):
+    if(ids == 1):
+        return feature1*feature2
+    elif(ids == 2):
+        return feature3*feature2
+    elif(ids == 3)
+        return feature1*0.2/feature1   
+    else return 0
+
+def SLO_breach(val,alpha)
+    if(val >= alpha): 
+           return 1
+    else return 0    
 
 # Structuring data before the inputs
 def structure_data(X,window,sel):
