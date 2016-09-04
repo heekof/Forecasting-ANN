@@ -1,8 +1,17 @@
-# Import the Monasca and Keystone clients
-#from monascaclient import client
-#from monascaclient import ksclient
+## Function for basic DATAFRAMES
+
+bb = 3;
+def cal():
+    return 3;
 
 
+
+
+
+
+
+
+'''
 def test_func(x):
     print x
 
@@ -19,85 +28,7 @@ def monasca_connect(k,c):
     monasca_client = client.Client(api_version, monasca_url, token=ks.token)
 
 
-# getting the metrics information
-def get_metrics(names=[None], dimensions={}, limit=10):
-    metrics = []
-    for name in names:
-        # Invoke the Monasca client
-        metrics = metrics + monasca_client.metrics.list(name=name, dimensions=dimensions, limit=limit)
-    return metrics
 
-# function get measurements
-def get_measurements(metrics, start_time = None, end_time = None, limit=None):
-    measurements = []
-
-    if start_time == None:
-        start_date = datetime.datetime.utcnow() - datetime.timedelta(seconds=3600)
-        start_time = start_date.strftime("%Y-%m-%dT%H:%M:%SZ")
-
-    if end_time == None:
-        end_date = datetime.datetime.utcnow() - datetime.timedelta(seconds=0)
-        end_time = end_date.strftime("%Y-%m-%dT%H:%M:%SZ")
-
-    for metric in metrics:
-        # Invoke the Monasca client
-        measurements.append(monasca_client.metrics.list_measurements(
-                name=metric['name'],
-                dimensions=metric['dimensions'],
-                start_time=start_time,
-                end_time=end_time))
-
-    return measurements
-
-
-# Unfortunatelly this function is not working
-def df_from_measurements(measurements, group_by=[]):
-    '''Returns a DataFrame given measurements'''
-    measurement = measurements[1]
-    m = np.array(measurement[0]['measurements'])
-    timestamps = m[:, measurement[0]['columns'].index('timestamp')]
-    df = pd.DataFrame(index = timestamps)
-
-    for measurement in measurements:
-        if measurement:
-            measure = measurement
-            m = np.array(measure[0]['measurements'])
-            name = measure[0]['name']
-            dimensions = measure[0]['dimensions']
-
-            for group in group_by:
-                if group in dimensions:
-                    name += '.' + dimensions[group]
-            #df[name] = m[:measure[1][0]['columns'].index('value')]
-    return df
-
-# getting my DataFrame df
-def get_df():
-    i = 0;
-    max = len(measurements);
-    for measure in measurements:
-        if measure:
-
-            data = np.array(measure[0]['measurements'])
-            metric_name = measure[0]['name']
-            hostname = measure[0]['dimensions'].get('hostname')
-            service = measure[0]['dimensions'].get('service')
-            timestamp = ["" for x in range(len(data))]
-            values = np.zeros(len(data))
-            i = i + 1;
-            i=0;
-            if hostname == "mini-mon" and metric_name == "net.out_packets_sec":
-                for d in data:
-                    timestamp[i] = d[0]
-                    values[i] = d[1]
-                    i = i + 1
-                df = pd.DataFrame(index = timestamp)
-                df['name'] = metric_name
-                df[service] = service
-                df[hostname] = hostname
-                df['valeur'] = values
-                df['time'] = np.arange(len(timestamp))
-    return df;
 
 # compute the autocorrelation
 def autocorr(x):
@@ -128,13 +59,13 @@ def SLO_mapping(ids,feature1,feature2,feature3,feature4):
     elif(ids == 2):
         return feature3*feature2
     elif(ids == 3)
-        return feature1*0.2/feature1   
+        return feature1*0.2/feature1
     else return 0
 
 def SLO_breach(val,alpha)
-    if(val >= alpha): 
+    if(val >= alpha):
            return 1
-    else return 0    
+    else return 0
 
 # Structuring data before the inputs
 def structure_data(X,window,sel):
@@ -182,3 +113,4 @@ def recadrer(h,window):
         else:
             h_out[i] = 0
     return h_out
+'''
