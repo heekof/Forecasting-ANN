@@ -67,20 +67,7 @@ def SLO_breach(val,alpha)
            return 1
     else return 0
 
-# Structuring data before the inputs
-def structure_data(X,window,sel):
-    if sel == 0:
-        y = X[window:]
-        y_l = [ [y[i]] for i in range(y.size) ]
-        X_input =  np.resize(X,(X.size/window,window))
-        X_l = X_input.tolist()
-        return X_l,y_l,y
-    else:
-        y = X[step_size:]
-        y_l = [ [y[i]] for i in range(y.size) ]
-        X = X[:-step_size]
-        X_l = [ [X[i]] for i in range(X.size) ]
-        return X_l,y_l,y
+
 
 # getting the prediction in the form of an array
 def get_prediction(Xi,norm):
