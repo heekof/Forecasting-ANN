@@ -1,0 +1,10 @@
+ pip install virtualenv
+ conda create --name=tensorflow_env python=2.7
+source activate tensorflow_env
+ pip install --upgrade https://xxxxxx.whl
+pip install matplotlib
+sudo apt-get install  python-numpy python-scipy   python-matplotlib ipython
+
+
+
+source deactivate

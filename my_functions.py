@@ -69,12 +69,6 @@ def SLO_breach(val,alpha)
 
 
 
-# getting the prediction in the form of an array
-def get_prediction(Xi,norm):
-    if norm == 0:
-        return [ nn.predict(X[i])[0]*normx+normy for i in range(len(X))]
-    else:
-        return [ Xi[i] + nn.predict([Xi[i]])[0]*Xi[i] for i in range(len(Xi))]
 
 
 def unnorm(y_arr2):

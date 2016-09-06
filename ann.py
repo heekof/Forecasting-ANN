@@ -30,7 +30,7 @@ class ANN:
         elif activation_fun == 'linear':
             self.squash = linear
             self.deriv_squash = deriv_linear
-        elif activation_fun == 'ReLu':
+        elif activation_fun == 'relu':
             self.squash = relu
             self.deriv_squash = deriv_relu
 
