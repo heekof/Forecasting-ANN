@@ -1,0 +1,50 @@
+Installing Keras is a breeze — pip  can do all the hard work for us. First, we need to install a few dependencies:
+Installing Keras for deep learning
+Shell
+$ pip install numpy scipy
+$ pip install scikit-learn
+$ pip install pillow
+$ pip install h5py
+1
+2
+3
+4
+	
+$ pip install numpy scipy
+$ pip install scikit-learn
+$ pip install pillow
+$ pip install h5py
+
+We also need to install Theano. You can certainly use pip  to install Theano; however, it’s important to note that Keras always uses the latest version of Theano, which is not always the version that is on PyPI. Thus, we should instead install Theano using the following command:
+Installing Keras for deep learning
+Shell
+$ pip install --upgrade --no-deps git+git://github.com/Theano/Theano.git
+1
+	
+$ pip install --upgrade --no-deps git+git://github.com/Theano/Theano.git
+
+An alternative method to install Theano is to clone the repository from GitHub and use the setup.py  script:
+Installing Keras for deep learning
+Shell
+$ git clone https://github.com/Theano/Theano
+$ cd Theano
+$ python setup.py install
+1
+2
+3
+	
+$ git clone https://github.com/Theano/Theano
+$ cd Theano
+$ python setup.py install
+
+From there, we can use pip  to install Keras as well:
+Installing Keras for deep learning
+Shell
+$ pip install keras
+1
+	
+$ pip install keras
+
+After Keras has finished installing, you can verify the install by opening up a terminal, accessing the keras  virtual environment, and then importing the library (see Step #5 for an example on how to do this).
+
+However, if you want to optimize Keras so that it uses your GPU, CUDA Toolkit, and cuDNN, you’ll want to proceed to Step #3.

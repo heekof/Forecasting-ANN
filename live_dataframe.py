@@ -33,7 +33,7 @@ ax1 = fig.add_subplot(1,1,1)
 def animate(i):
 
 
-    data = DataFrame.from_csv("data_df.csv",sep=';')
+    data = DataFrame.from_csv("Data/data_df.csv",sep=';')
     buys = data.index
     buys
     temps = np.array(buys).astype("datetime64[s]")
