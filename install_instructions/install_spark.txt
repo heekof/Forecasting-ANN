@@ -1,0 +1,25 @@
+pip install py4j
+
+
+try: ./bin/spark-submit --master local[8] <python_file.py>
+
+
+# Spark conf in .bashrc
+
+export SPARK_HOME="/home/jaafar/anaconda2/SparkCourse/spark"
+export PYTHONPATH=$SPARK_HOME/python/:$PYTHONPATH
+export SPARK_LOCAL_IP=127.0.0.1
+jaafar@jaafar:~/anaconda2/Forecasting-ANN/install_instructions$
+
+
+# Config
+
+/anaconda2/SparkCourse/spark/conf$ mv log4j.properties.template log4j.properties
+ nn log4j.properties
+change log4j.rootCategory=ERROR, console
+
+
+# To launch
+
+
+in spark home : bin/pyspark
