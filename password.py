@@ -1,14 +1,11 @@
 import datetime
 import time
-
 # Import libraries use for visualization and analysis
 import pandas as pd
 import numpy as np
-
-
-
-
 import cufflinks as cf
+
+
 
 
 OS_PROJECT_NAME='mini-mon'
@@ -99,13 +96,11 @@ def Timestamp(df):
 
 
 def stamped_df(dframe):
-    
+
     dframe['Timestamp']=Timestamp(dframe)
     dframe.index.names = [None]
     dframe = dframe.reset_index(drop=True)
     dframe = dframe.set_index('Timestamp')
-    
-    
+
+
     return dframe
-
-
