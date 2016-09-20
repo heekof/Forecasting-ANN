@@ -33,16 +33,16 @@ ax1 = fig.add_subplot(1,1,1)
 def animate(i):
 
 
-    data = DataFrame.from_csv("Data/data_df.csv",sep=';')
+    data = DataFrame.from_csv("Data/data_demo.csv",sep=';')
     buys = data.index
     buys
     temps = np.array(buys).astype("datetime64[s]")
     buyDates = temps.tolist()
     buyDates
 
-    A = data['load.avg_1_min'];
+    A = data['predict'];
     B = data['cpu.wait_perc'];
-
+#    C = data['cpu.system_perc'];
     ax1.clear()
 
     ax1.set_title("Realtime metric "+str(data.columns.values))
@@ -50,8 +50,8 @@ def animate(i):
     ax1.set_ylabel("Values")
     ax1.plot(buys,B)
     ax1.plot(buys,A)
-
-
+#    ax1.plot(buys,C)
+    time.sleep(2)
 
 
 

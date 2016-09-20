@@ -15,23 +15,26 @@ ax1 = fig.add_subplot(1,1,1)
 
 
 def animate(i):
-    pullData = open("load.csv","r").read()
+    pullData = open("Data/data_demo.csv","r").read()
     dataArray = pullData.split('\n')
     xar = []
     yar = []
+    zar = []
+    p = 0;
     for eachLine in dataArray:
-        if len(eachLine)>1:
-            x,y = eachLine.split(';')
+        if len(eachLine)>1 and p==1:
+            t,x,y = eachLine.split(';')
             xar.append(float(x))
-            yar.append(float(y))
-
-
+            yar.append(float(t))
+            zar.append(float(y))
+        p = 1
     ax1.clear()
     ax1.set_title("Realtime metric M Plot")
     ax1.set_xlabel("Time")
     ax1.set_ylabel("Values")
-    ax1.plot(xar,yar)
-
+    ax1.plot(yar,xar)
+    ax1.plot(yar,zar)
+        #time.sleep(1)
 
 
 
