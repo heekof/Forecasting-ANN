@@ -18,7 +18,7 @@ config:
     input_dim: 1
     input_dtype: float32
     input_length: null
-    name: lstm_2
+    name: lstm_1
     output_dim: 4
     return_sequences: false
     stateful: false
@@ -27,5 +27,5 @@ config:
 - class_name: Dense
   config: {W_constraint: null, W_regularizer: null, activation: linear, activity_regularizer: null,
     b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
-    name: dense_2, output_dim: 1, trainable: true}
+    name: dense_1, output_dim: 1, trainable: true}
 keras_version: 1.0.8
