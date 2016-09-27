@@ -29,9 +29,9 @@ def animate(i):
             zar.append(float(y))
         p = 1
     ax1.clear()
-    ax1.set_title("Realtime metric M Plot")
+    ax1.set_title("Realtime metric CPU Plot")
     ax1.set_xlabel("Time")
-    ax1.set_ylabel("Values")
+    ax1.set_ylabel("Values in %")
     ax1.plot(yar,xar)
     ax1.plot(yar,zar)
         #time.sleep(1)
