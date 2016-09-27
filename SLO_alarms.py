@@ -75,6 +75,8 @@ if __name__ == '__main__':
     logfile = open("Data/data_demo.csv","r")
     loglines = follow(logfile)
     i=0;
+    columns = [str('Alarm_name'),str('SLO_ID'),str('SLO_breach_probability'),str('Alarm_Severity')];
+    dframe_alarms = pd.DataFrame(columns=columns)
     for line in loglines:
         #print line,
 
@@ -93,7 +95,7 @@ if __name__ == '__main__':
         Condition = index in df_x.index;
         if Condition:
             print ' \n SLO 1 breach probability :'+str(dframe.ix[index]['cpu.wait_perc']/30)+'\n'
-            if (14 - (float)(dframe.ix[index]['cpu.wait_perc'])) <= 0:
+            if (16 - (float)(dframe.ix[index]['cpu.wait_perc'])) <= 0:
                 logging.debug('CPU = %s' % dframe.ix[index]['cpu.wait_perc'] )
                 print '********* Alarm ****** SLO cpu will be breached *************** \n'
                 #print val;
@@ -101,9 +103,12 @@ if __name__ == '__main__':
                 id = i;
                 Name = "SLO Alarm - SLO will be breached"
                 SLO_id = "1"
-                d = pd.DataFrame(index=[id], data={ 'Alarm name' : 'Warning SLO will be breached','SLO_id' : SLO_id })
-                d.to_csv("Data/alarms.csv",header=True,index=True,sep=';',index_label='Alarm ID')
-
+                prob = dframe.ix[index]['cpu.wait_perc']/30
+                #columns = ['Alarm name','SLO ID','SLO breach probability','Alarm Severity'];
+                dframe_alarms.loc[len(dframe_alarms)]=[str('SLO_CPU_SIP_Server'),SLO_id,prob,str('Warning_SLO_will_be_breached')];
+                #d = pd.DataFrame(index=[id], data={ 'Alarm name' : '','SLO_id' : SLO_id, 'SLO breach probability' : })
+                dframe_alarms.to_csv("Data/alarms.csv",sep=';',header=True,index=True,index_label='Alarm_ID')
+                time.sleep(3)
 ##
 ##
 
