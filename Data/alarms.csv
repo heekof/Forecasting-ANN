@@ -1,4 +1,1 @@
-Alarm_ID;Alarm_name;SLO_ID;SLO_breach_probability;Alarm_Severity
-0;SLO_CPU_SIP_Server;1;0.536666666667;Warning_SLO_will_be_breached
-1;SLO_CPU_SIP_Server;1;0.543333333333;Warning_SLO_will_be_breached
-2;SLO_CPU_SIP_Server;1;0.536666666667;Warning_SLO_will_be_breached
+
