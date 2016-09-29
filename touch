@@ -1,0 +1,15 @@
+---
+  include metrics
+  include service
+  include profiles
+    - service: service-name
+      actors:
+      actions:
+      profiles: name=basics
+      slo:
+        - name: xxxxxxxxxx
+          time: start= end= format=Unix
+          metric: name=cpu
+            - condition: predicat=less percentile=0.2
+            - threshold: avg=true value=2
+ SLA-descriptor/SLO/service-name-slo.yaml

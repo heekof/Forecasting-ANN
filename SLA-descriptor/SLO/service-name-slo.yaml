@@ -1,0 +1,14 @@
+---
+  - include: metrics
+  - include: service
+  - include: profiles
+  - service: service-name
+    actors:
+    actions:
+    profiles: name=basics
+    slo:
+      - name: xxxxxxxxxx
+        time: start=1 end=1 format=Unix
+        metric: name=cpu
+        condition: predicat=less percentile=0.2
+        threshold: avg=true value=2
