@@ -24,3 +24,10 @@ while read process; do
 
 
 done <processes.txt
+
+cd ~/anaconda2/Forecasting-ANN/
+echo " Clearing the data repository"
+echo '' > Data/data_demo.csv
+echo " "
+echo " Clearing the alarm repository "
+echo '' > Data/alarms.csv
